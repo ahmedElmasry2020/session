@@ -1,0 +1,38 @@
+-Lesson #3 "traversing through Git History"
+-- git remote show origin -->shows remote urls
+-- git log -->shows all logs that has been made 
+-- git checkout 032b2f2871222 -->checkout the logs made to this file
+-- vim cms/index.js --> will open the file in the terminal
+-- git checkout master --> change to master branch
+-- git checkout cms/index.js --> to discard changes in working directory
+-- git log --stat 75fd4 --> get status of commit by commit id
+-- git diff 032b2f2871222 032b2f2871221 --> get the difference between two commits
+-- git diff 032b2f2871222 032b2f2871221 --index.js --> get the difference between two commits in that file
+-- git diff HEAD HEAD^ --index.js --> difference between HEAD and previouse commit
+-- git reset --hard HEAD   -->    (going back to HEAD)
+-- git reset --hard HEAD^  -->    (going back to the commit before HEAD)
+-- git reset --hard HEAD~1 -->    (equivalent to "^")
+-- git reset --hard HEAD~2  -->   (going back two commits before HEAD)
+-- git reset --hard HEAD@{1} --> (To undo a hard reset on Git, use the “git reset” command with the “–hard” option and specify “HEAD@{1}”)
+-- git reset --soft HEAD    -->   (going back to HEAD)
+-- git reset --soft HEAD^   -->   (going back to the commit before HEAD)
+-- git reset --soft HEAD~1  -->   (equivalent to "^")
+-- git reset --soft HEAD~2  -->   (going back two commits before HEAD)
+-- git rm index.js --> remove the file from indexing git tree
+-- git stash save "i will archive these changes and come back on another time" --> saving files that not completed to work on them on another time
+-- git stash list
+-- git stash apply stash@{0} --> get stashed files back to be commited
+-- git fetch --> fetching to know the status of remote 
+-- git add submodule <url> path_to_submodule --> create a submodule inside the folder. it means create a git repo inside a git repo
+-- git submodule update --> update submodule with changes made
+-- git branch --> get Current Branch working on
+-- git checkout -b feature1 --> add a new branch 
+-- git checkout master --> change the branch to master
+-- git branch -d feature1 --> delete feature branch 
+-- git merge feature1 --> will merge selected branch to current branch
+-- git reset HEAD^ --> will get one step back to merge confilcts
+-- git branch -m test dev --> rename branch of test to dev
+-- git branch -d branchname --> delete branch 
+-- git rebase -i HEAD~2 --> will rebase 2 commits to single commit 
+-- git cherry-pick <commit-hash> --> it will select a single commit from one branch and apply it onto another
+--
