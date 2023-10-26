@@ -1,0 +1,7 @@
+1- Branch Commands
+	git checkout -b branch2 "genertae a new branch"
+	git branch -a "to see all local and remote branches"
+	git checkout master "go to the master branch"
+	
+2- Merging
+	git merge branch1
